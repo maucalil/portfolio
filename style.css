@@ -32,12 +32,7 @@ a:hover {
     transform: scale(1.2);
 }
 
-/* General Classes */
-.page-content {
-    margin-top: var(--navbar-height);
-}   
-
-.section {
+section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,6 +40,11 @@ a:hover {
     padding: 32px;
     min-height: calc(100vh - var(--navbar-height));
 }
+
+/* General Classes */
+.page-content {
+    margin-top: var(--navbar-height);
+}   
 
 .section-title {
     font-size: 48px;
@@ -202,6 +202,7 @@ nav .nav-links a {
     flex-direction: column;
     align-items: center;
     width: 25%;
+    margin-bottom: 32px;
 }
 
 .skill-category h3 {
