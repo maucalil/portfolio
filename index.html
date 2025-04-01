@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@1,100..800&display=swap" rel="stylesheet">
+
     <title>My Portfolio</title>
 </head>
 <body>
@@ -24,8 +28,9 @@
                 <ul class="nav-links">
                     <li><a href="#">Home</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             
@@ -50,7 +55,11 @@
                 <div class="hero-text">
                     <h5>Hi I'm <span class="input"></span></h5>
                     <h1>Maurício Calil Manfrim Lucera</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>A final-year Computer Science student at USP and former exchange student at TU Braunschweig, with experience in
+                        full-stack web development, as well as cloud infrastructure setup and maintenance. Also experienced in low-power
+                        wireless network projects. Native in Portuguese and fluent in English, with basic knowledge of Spanish and German.
+                        Deeply interested in software engineering, always striving to improve skills and explore new technologies.
+                    </p>
                 </div>
             </div>
         </section>
@@ -58,7 +67,7 @@
         <!-- Skills -->
         <section id="skills">
             <h1 class="section-title">Skills</h1>
-            <div class="section-content">
+            <div class="section-content wrap">
                 <div class="skill-category">
                     <h3>Languages</h3>
                     <ul>
@@ -109,8 +118,68 @@
         <section id="experience">
             <h1 class="section-title">Experience</h1>
             <div class="section-content">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="bullet"></span>
+                        <div class="timeline-card">
+                            <div class="timeline-card-title">
+                                <h2>Web Developer Intern</h2>
+                                <span><i class="fa-regular fa-calendar"></i>Aug/2021 - Jul/2023</span>
+                            </div>
+                            <div class="timeline-card-subtitle">
+                                <span>Tokenlab - Tecnologia da Informação LTDA</span>
+                                <span><i class="fa-solid fa-location-dot"></i>São Carlos, Brazil (Remote)</span>
+                            </div>
+                            <ul>
+                                <li>Development and maintenance of scalable full-stack web applications.</li>
+                                <li>Development of automated tests.</li>
+                                <li>Configuration and automation of CI/CD pipelines.</li>
+                                <li>Development of cloud infrastructure on AWS.</li>
+                            </ul>
+                        </div>
+                    </div>
 
-                
+                    <div class="timeline-item">
+                        <span class="bullet"></span>
+                        <div class="timeline-card">
+                            <div class="timeline-card-title">
+                                <h2>Project Manager</h2>
+                                <span><i class="fa-regular fa-calendar"></i>Aug/2023 - Mar/2024</span>
+                            </div>
+                            <div class="timeline-card-subtitle">
+                                <span>OctoBit Jr.</span>
+                                <span><i class="fa-solid fa-location-dot"></i>Ribeirão Preto, Brazil (Hybrid)</span>
+                            </div>
+                            <ul>
+                                <li>Contribution to the creation and structuring of the junior company.</li>
+                                <li>Development of on-demand web applications and provision of consulting services.</li>
+                                <li>Preparation and conducting of training sessions for the project team.</li>
+                                <li>Involvement in client prospecting and defining project requirements and scope.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="bullet"></span>
+                        <div class="timeline-card">
+                            <div class="timeline-card-title">
+                                <h2>Student Research Assistent</h2>
+                                <span><i class="fa-regular fa-calendar"></i>Jul/2024 - Jan/2025</span>
+                            </div>
+                            <div class="timeline-card-subtitle">
+                                <span>Technische Universität Braunschweig</span>
+                                <span><i class="fa-solid fa-location-dot"></i>Braunschweig, Germany (Hybrid)</span>
+                            </div>
+                            <ul>
+                                <li>Development of multi-connectivity in wireless sensor networks.</li>
+                                <li>Design and implementation of an IPv6 extension header to support communication between multiple interfaces.</li>
+                                <li>Creation of efficient mechanisms for handling duplicate packets.</li>
+                                <li>Extension of the Neighbor Discovery Protocol (NDP) to support multiple network interfaces.</li>
+                                <li>Improvement of fault tolerance and adaptability in low-power environments.</li>
+                            </ul>
+                        </div>
+                    </div>
+
             </div>
         </section> 
 
