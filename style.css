@@ -88,6 +88,24 @@ section {
     flex-wrap: wrap;
 }
 
+.btn-primary {
+    cursor: pointer;
+    border-color: var(--button-border);
+    color: #fff;
+    background-color: var(--button-bg);
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid var(--text-primary);
+    box-shadow: 0 10px 10px -8px var(--shadow-default);
+    transition: 0.5s;   
+}
+
+.btn-primary:hover {
+    border-color: var(--primary-color);
+    transform: scale(1.1);
+}
+
 /* Navbar */
 .navbar {
     position: fixed;
@@ -143,35 +161,10 @@ nav .nav-links a {
     margin-right: 32px;
 }
 
-.cv-links {
-    color: #fff;
+.language-switcher {
     display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 32px;
-}
-
-.cv-links button {
-    cursor: pointer;
-    border-color: var(--button-border);
-    color: #fff;
-    background-color: var(--button-bg);
-    padding: 12px 24px;
-    margin: 5px 7px 5px 0;
-    font-size: 16px;
-    border-radius: 32px;
-    border: 2px solid var(--text-primary);
-    box-shadow: 0 10px 10px -8px var(--shadow-default);
-    transition: 0.5s;   
-}
-
-.cv-links button:hover {
-    border-color: var(--primary-color);
-    transform: scale(1.1);
-}
-
-.cv-links a {
-    font-size: 32px;
+    gap: 24px;
+    font-size: 24px;
 }
 
 /* Hero Section */
@@ -195,10 +188,16 @@ nav .nav-links a {
     transform: scale(1.2);
 }
 
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 0 32px;
+}
+
 .hero-text {
     display: flex;
     flex-direction: column;
-    padding: 0 32px;
 }
 
 .hero-text h5 {
@@ -219,6 +218,23 @@ nav .nav-links a {
 .hero-text p {
     color: var(--text-primary);
     max-width: 900px;
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 32px;
+}
+
+.hero-icons {
+    display: flex;
+    gap: 32px;
+    font-size: 48px;
 }
 
 /* Skills Section */
@@ -344,6 +360,11 @@ nav .nav-links a {
 }
 
 @media(max-width: 1024px) {
+    /* General Classes */
+    .column-m {
+        flex-direction: column;
+    }
+
     /* Navbar */
     nav .nav-btn {
         display: initial;
@@ -400,6 +421,12 @@ nav .nav-links a {
 
     nav .nav-links.open {
         left: 0;
+    }
+
+    /* Hero Section */
+    .hero-actions {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     /* Skills Section */
