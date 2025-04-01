@@ -56,13 +56,17 @@ section {
     justify-content: center;
     align-items: center;
     padding: 32px;
-    min-height: calc(100vh - var(--navbar-height));
+    min-height: auto;
 }
 
 /* General Classes */
 .page-content {
     margin-top: var(--navbar-height);
 }   
+
+.section-fullscreen {
+    min-height: calc(100vh - var(--navbar-height));
+}
 
 .section-title {
     font-size: 48px;
@@ -277,7 +281,7 @@ nav .nav-links a {
     background-color: var(--text-primary);
     position: absolute;
     left: 24px;
-    z-index: 999;
+    z-index: 1;
 }
 
 .timeline-card {
