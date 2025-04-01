@@ -1,6 +1,24 @@
 /* Default elements */
 :root {
     --navbar-height: 105px;
+    /* Colors */
+    --primary-color: #007ced;   /* Main blue */
+    --secondary-color: #444;    /* Dark gray */
+    --bg-color: #222;           /* Main background */
+
+    /* Text Colors */
+    --text-primary: #e5e5e5;    /* Main text */
+    --text-secondary: #bbb;     /* Muted/secondary text */
+
+    /* Border & Shadows */
+    --border-primary: #e5e5e5;
+    --shadow-default: rgba(0, 0, 0, 0.78);
+    --shadow-highlight: rgba(0, 124, 237, 0.3);
+
+    /* Buttons */
+    --button-bg: #333;
+    --button-border: #e5e5e5;
+    --button-hover-border: #007ced;
 }
 
 * {
@@ -8,7 +26,7 @@
     margin: 0;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: poppins, sans-serif;
+    font-family: "JetBrains Mono", monospace;
 }
 
 html {
@@ -18,17 +36,17 @@ html {
 
 body {
     overflow-x: hidden;
-    background-color: #222;
+    background-color: var(--bg-color);
 }
 
 a {
-    color: #e5e5e5;
+    color: var(--text-primary);
     cursor: pointer;
     transition: transform 0.3s, color 0.3s;
 }
 
 a:hover {
-    color: #007ced;
+    color: var(--primary-color);
     transform: scale(1.2);
 }
 
@@ -49,18 +67,21 @@ section {
 .section-title {
     font-size: 48px;
     font-weight: 700;
-    color: #e5e5e5;
+    color: var(--text-primary);
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
 }
 
 .section-content {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     flex-grow: 1;
+}
+
+.wrap {
+    flex-wrap: wrap;
 }
 
 /* Navbar */
@@ -69,15 +90,15 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #222;
+    background-color: var(--bg-color);
     margin: 0 auto;
     padding: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    border-bottom: 1px solid #444;
-    box-shadow: 1px 1px 8px #444;
+    border-bottom: 1px solid var(--secondary-color);
+    box-shadow: 1px 1px 8px var(--secondary-color);
     z-index: 999;
 }
 
@@ -97,7 +118,7 @@ nav .nav-btn {
 
 nav .nav-btn span {
     display: block;
-    background-color: #e5e5e5;
+    background-color: var(--text-primary);
     margin: 5px 0;
     width: 100%;
     height: 3px;
@@ -128,20 +149,20 @@ nav .nav-links a {
 
 .cv-links button {
     cursor: pointer;
-    border-color: #d5d5d5;
+    border-color: var(--button-border);
     color: #fff;
-    background-color: #333;
+    background-color: var(--button-bg);
     padding: 12px 24px;
     margin: 5px 7px 5px 0;
     font-size: 16px;
     border-radius: 32px;
-    border: 2px solid #e5e5e5;
-    box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.78);
+    border: 2px solid var(--text-primary);
+    box-shadow: 0 10px 10px -8px var(--shadow-default);
     transition: 0.5s;   
 }
 
 .cv-links button:hover {
-    border-color: #007ced;
+    border-color: var(--primary-color);
     transform: scale(1.1);
 }
 
@@ -156,7 +177,7 @@ nav .nav-links a {
     min-width: 300px;
     border-radius: 50%;
     overflow: hidden;
-    border: 15px solid #444;
+    border: 15px solid var(--secondary-color);
     box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5);
 }
 
@@ -177,22 +198,23 @@ nav .nav-links a {
 }
 
 .hero-text h5 {
-    color: #e5e5e5;
+    color: var(--text-primary);
     font-size: 14px;
 }
 
 .hero-text h5 span {
-    color: #007ced;
+    color: var(--primary-color);
     font-size: 16px;
 }
 
 .hero-text h1 {
-    color: #007ced;
+    color: var(--primary-color);
     font-size: 48px;
 }
 
 .hero-text p {
-    color: #e5e5e5;
+    color: var(--text-primary);
+    max-width: 900px;
 }
 
 /* Skills Section */
@@ -208,7 +230,7 @@ nav .nav-links a {
 .skill-category h3 {
     font-size: 24px;
     margin-bottom: 32px;
-    color: #e5e5e5;
+    color: var(--text-primary);
 }
 
 .skill-category ul {
@@ -221,7 +243,6 @@ nav .nav-links a {
 }
 
 .skill-category li {
-    color: #bbb;
     text-align: center;
     width: 26%;
 }
@@ -268,7 +289,7 @@ nav .nav-links a {
         bottom: 0;
         width: 100%;
         height: 100vh;
-        background-color: #222;
+        background-color: var(--bg-color);
         z-index: 3;
         box-shadow: -5px 13px 30px rgba(0, 0, 0, 0.1);
         transition: 0.5s;
@@ -296,8 +317,6 @@ nav .nav-links a {
     }
 
     .skill-category li {
-        color: #bbb;
-        text-align: center;
         width: 38%;
     }
 }
