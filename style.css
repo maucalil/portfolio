@@ -378,7 +378,7 @@ nav .nav-links a {
         top: var(--navbar-height);
         left: -100%;
         bottom: 0;
-        width: 100%;
+        width: 80%;
         height: 100vh;
         background-color: var(--bg-color);
         z-index: 3;
