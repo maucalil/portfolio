@@ -58,11 +58,3 @@ section {
     padding: 32px;
     min-height: auto;
 }
-
-button {
-    cursor: pointer;
-    padding: 16px;
-    font-size: 16px;
-    border-radius: 5px;
-    box-shadow: 0 10px 10px -8px var(--shadow-default);
-}
