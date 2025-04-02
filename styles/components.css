@@ -9,6 +9,7 @@
 
 .btn-primary:hover {
     border-color: var(--primary-color);
+    background-color: var(--bg-color);
     transform: scale(1.1);
 }
 
@@ -265,6 +266,60 @@ nav .nav-links a {
     margin-bottom: 0;
 }
 
+/* Form */
+.contact-form {
+    max-width: 960px;
+    width: 75%;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: var(--text-primary);
+    background: var(--bg-color);
+    border: 2px solid var(--border-primary);
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0px 0px 10px var(--shadow-highlight);
+}
+
+.input-group {
+    display: flex;
+    gap: 16px;
+}
+
+.input-group input {
+    flex: 1;
+}
+
+.contact-form textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100% ;
+}
+
+.contact-form .btn-primary:hover {
+    transform: scale(1.03);
+}
+
 @media(max-width: 1024px) {
     /* Navbar */
     nav .nav-btn {
@@ -337,6 +392,11 @@ nav .nav-links a {
 
     .skill-category li {
         width: 38%;
+    }
+
+    /* Form */
+    .input-group {
+        flex-direction: column;
     }
 }
 
