@@ -1,0 +1,68 @@
+/* Default elements */
+:root {
+    --navbar-height: 105px;
+    /* Colors */
+    --primary-color: #007ced;   /* Main blue */
+    --secondary-color: #444;    /* Dark gray */
+    --bg-color: #222;           /* Main background */
+
+    /* Text Colors */
+    --text-primary: #e5e5e5;    /* Main text */
+    --text-secondary: #bbb;     /* Muted/secondary text */
+
+    /* Border & Shadows */
+    --border-primary: #e5e5e5;
+    --shadow-default: rgba(0, 0, 0, 0.78);
+    --shadow-highlight: rgba(0, 124, 237, 0.3);
+
+    /* Buttons */
+    --button-bg: #333;
+    --button-border: #e5e5e5;
+    --button-hover-border: #007ced;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "JetBrains Mono", monospace;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--navbar-height);
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--bg-color);
+}
+
+a {
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s;
+}
+
+a:hover {
+    color: var(--primary-color);
+    transform: scale(1.2);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    min-height: auto;
+}
+
+button {
+    cursor: pointer;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px -8px var(--shadow-default);
+}
