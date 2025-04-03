@@ -30,17 +30,17 @@
                 </div>
 
                 <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" id="nav-links-home">Home</a></li>
+                    <li><a href="#skills" id="nav-links-skills">Skills</a></li>
+                    <li><a href="#experience" id="nav-links-experience">Experience</a></li>
+                    <li><a href="#education" id="nav-links-education">Education</a></li>
+                    <li><a href="#contact" id="nav-links-contact">Contact</a></li>
                 </ul>
             </nav>
             
-            <div class="language-switcher">
-                <a href=""><i class="fi fi-br"></i></a>
-                <a href=""><i class="fi fi-gb"></i></a>
+            <div class="lang-switcher">
+                <i class="fi fi-br" data-lang="pt"></i>
+                <i class="fi fi-gb" data-lang="en"></i>
             </div>
     </div>
 
@@ -49,13 +49,13 @@
          <section id="#" class="section-fullscreen">
             <div class="section-content column-m">
                 <div class="hero-pic">
-                    <img src="assets/profile-pic.jpeg" alt="profile pic">
+                    <img src="assets/images/profile-pic.jpeg" alt="profile pic">
                 </div>
                 <div class="hero-info">
                     <div class="hero-text">
-                        <h5>Hi I'm <span class="input"></span></h5>
-                        <h1>Maurício Calil Manfrim Lucera</h1>
-                        <p>A final-year Computer Science student at USP and former exchange student at TU Braunschweig, with experience in
+                        <h5 id="hero-text-h5">Hi I'm <span class="input"></span></h5>
+                        <h1 id="hero-text-h1">Maurício Calil Manfrim Lucera</h1>
+                        <p id="hero-text-p">A final-year Computer Science student at USP and former exchange student at TU Braunschweig, with experience in
                             full-stack web development, as well as cloud infrastructure setup and maintenance. Also experienced in low-power
                             wireless network projects. Native in Portuguese and fluent in English, with basic knowledge of Spanish and German.
                             Deeply interested in software engineering, always striving to improve skills and explore new technologies.
@@ -64,11 +64,11 @@
 
                     <div class="hero-actions">
                         <div class="hero-buttons">
-                            <a class="btn-primary" href="assets/CV_English.pdf" target="_blank">
+                            <a class="btn-primary" href="assets/pdfs/CV_English.pdf" target="_blank" id="hero-buttons-cv">
                                 Download my CV
                             </a>
     
-                            <a class="btn-primary" href="#contact">
+                            <a class="btn-primary" href="#contact" id="hero-buttons-contact">
                                 Let's Work Together
                             </a>
                         </div>
@@ -84,10 +84,10 @@
     
         <!-- Skills -->
         <section id="skills">
-            <h1 class="section-title">Skills</h1>
+            <h1 class="section-title" id="skills-h1">Skills</h1>
             <div class="section-content wrap">
                 <div class="skill-category">
-                    <h3>Languages</h3>
+                    <h3 id="skill-category-languages">Languages</h3>
                     <ul>
                         <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" /></li>
                         <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" /></li>
@@ -98,7 +98,7 @@
                 </div>
         
                 <div class="skill-category">
-                    <h3>Front-end</h3>
+                    <h3 id="skill-category-frontend">Front-end</h3>
                     <ul>
                         <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" /></li>
                         <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" /></li>
@@ -109,7 +109,7 @@
                 </div>
         
                 <div class="skill-category">
-                    <h3>Back-end</h3>
+                    <h3 id="skill-category-backend">Back-end</h3>
                     <ul>
                         <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" /></li>
                         <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg" /></li>
@@ -120,7 +120,7 @@
                 </div>
         
                 <div class="skill-category">
-                    <h3>Technologies</h3>
+                    <h3 id="skill-category-technologies">Technologies</h3>
                     <ul>
                         <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" /></li>
                         <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" /></li>
@@ -134,25 +134,25 @@
     
         <!-- Experience -->
         <section id="experience">
-            <h1 class="section-title">Experience</h1>
+            <h1 class="section-title" id="exeprience-h1">Experience</h1>
             <div class="section-content">
                 <div class="timeline">
                     <div class="timeline-item">
                         <span class="bullet"></span>
                         <div class="timeline-card">
                             <div class="timeline-card-title">
-                                <h2>Web Developer Intern</h2>
-                                <span><i class="fa-regular fa-calendar"></i>Aug/2021 - Jul/2023</span>
+                                <h2 id="timeline-card-position-1">Web Developer Intern</h2>
+                                <span id="timeline-card-year-1"><i class="fa-regular fa-calendar"></i>Aug/2021 - Jul/2023</span>
                             </div>
                             <div class="timeline-card-subtitle">
-                                <span>Tokenlab - Tecnologia da Informação LTDA</span>
-                                <span><i class="fa-solid fa-location-dot"></i>São Carlos, Brazil (Remote)</span>
+                                <span id="timeline-card-company-1">Tokenlab - Tecnologia da Informação LTDA</span>
+                                <span id="timeline-card-place-1"><i class="fa-solid fa-location-dot"></i>São Carlos, Brazil (Remote)</span>
                             </div>
                             <ul>
-                                <li>Development and maintenance of scalable full-stack web applications.</li>
-                                <li>Development of automated tests.</li>
-                                <li>Configuration and automation of CI/CD pipelines.</li>
-                                <li>Development of cloud infrastructure on AWS.</li>
+                                <li id="timeline-card-task-1-1">Development and maintenance of scalable full-stack web applications.</li>
+                                <li id="timeline-card-task-1-2">Development of automated tests.</li>
+                                <li id="timeline-card-task-1-3">Configuration and automation of CI/CD pipelines.</li>
+                                <li id="timeline-card-task-1-4">Development of cloud infrastructure on AWS.</li>
                             </ul>
                         </div>
                     </div>
@@ -161,18 +161,18 @@
                         <span class="bullet"></span>
                         <div class="timeline-card">
                             <div class="timeline-card-title">
-                                <h2>Project Manager</h2>
-                                <span><i class="fa-regular fa-calendar"></i>Aug/2023 - Mar/2024</span>
+                                <h2 id="timeline-card-position-2">Project Manager</h2>
+                                <span id="timeline-card-year-2"><i class="fa-regular fa-calendar"></i>Aug/2023 - Mar/2024</span>
                             </div>
                             <div class="timeline-card-subtitle">
-                                <span>OctoBit Jr.</span>
-                                <span><i class="fa-solid fa-location-dot"></i>Ribeirão Preto, Brazil (Hybrid)</span>
+                                <span id="timeline-card-company-2">OctoBit Jr.</span>
+                                <span id="timeline-card-place-2"><i class="fa-solid fa-location-dot"></i>Ribeirão Preto, Brazil (Hybrid)</span>
                             </div>
                             <ul>
-                                <li>Contribution to the creation and structuring of the junior company.</li>
-                                <li>Development of on-demand web applications and provision of consulting services.</li>
-                                <li>Preparation and conducting of training sessions for the project team.</li>
-                                <li>Involvement in client prospecting and defining project requirements and scope.</li>
+                                <li id="timeline-card-task-2-1">Contribution to the creation and structuring of the junior company.</li>
+                                <li id="timeline-card-task-2-2">Development of on-demand web applications and provision of consulting services.</li>
+                                <li id="timeline-card-task-2-3">Preparation and conducting of training sessions for the project team.</li>
+                                <li id="timeline-card-task-2-4">Involvement in client prospecting and defining project requirements and scope.</li>
                             </ul>
                         </div>
                     </div>
@@ -181,19 +181,19 @@
                         <span class="bullet"></span>
                         <div class="timeline-card">
                             <div class="timeline-card-title">
-                                <h2>Student Research Assistent</h2>
-                                <span><i class="fa-regular fa-calendar"></i>Jul/2024 - Jan/2025</span>
+                                <h2 id="timeline-card-position-3">Student Research Assistant</h2>
+                                <span id="timeline-card-year-3"><i class="fa-regular fa-calendar"></i>Jul/2024 - Jan/2025</span>
                             </div>
                             <div class="timeline-card-subtitle">
-                                <span>Technische Universität Braunschweig</span>
-                                <span><i class="fa-solid fa-location-dot"></i>Braunschweig, Germany (Hybrid)</span>
+                                <span id="timeline-card-company-3">Technische Universität Braunschweig</span>
+                                <span id="timeline-card-place-3"><i class="fa-solid fa-location-dot"></i>Braunschweig, Germany (Hybrid)</span>
                             </div>
                             <ul>
-                                <li>Development of multi-connectivity in wireless sensor networks.</li>
-                                <li>Design and implementation of an IPv6 extension header to support communication between multiple interfaces.</li>
-                                <li>Creation of efficient mechanisms for handling duplicate packets.</li>
-                                <li>Extension of the Neighbor Discovery Protocol (NDP) to support multiple network interfaces.</li>
-                                <li>Improvement of fault tolerance and adaptability in low-power environments.</li>
+                                <li id="timeline-card-task-3-1">Development of multi-connectivity in wireless sensor networks.</li>
+                                <li id="timeline-card-task-3-2">Design and implementation of an IPv6 extension header to support communication between multiple interfaces.</li>
+                                <li id="timeline-card-task-3-3">Creation of efficient mechanisms for handling duplicate packets.</li>
+                                <li id="timeline-card-task-3-4">Extension of the Neighbor Discovery Protocol (NDP) to support multiple network interfaces.</li>
+                                <li id="timeline-card-task-3-5">Improvement of fault tolerance and adaptability in low-power environments.</li>
                             </ul>
                         </div>
                     </div>
@@ -203,19 +203,19 @@
 
         <!-- Education -->
         <section id="education">
-            <h1 class="section-title">Education</h1>
+            <h1 class="section-title" id="education-h1">Education</h1>
             <div class="section-content">
                 <div class="timeline">
                     <div class="timeline-item">
                         <span class="bullet"></span>
                         <div class="timeline-card">
                             <div class="timeline-card-title">
-                                <h2>University of São Paulo - USP</h2>
-                                <span><i class="fa-regular fa-calendar"></i>Apr/2021 - Dec/2025</span>
+                                <h2 id="edcation-university-1">University of São Paulo - USP</h2>
+                                <span id="edcation-year-1"><i class="fa-regular fa-calendar"></i> Apr/2021 - Dec/2025</span>
                             </div>
                             <div class="timeline-card-subtitle">
-                                <span>Bachelor's in Computer Science</span>
-                                <span><i class="fa-solid fa-location-dot"></i>Ribeirão Preto, Brazil</span>
+                                <span id="edcation-degree-1">Bachelor's in Computer Science</span>
+                                <span id="edcation-place-1"><i class="fa-solid fa-location-dot"></i> Ribeirão Preto, Brazil</span>
                             </div>
                         </div>
                     </div>
@@ -224,12 +224,12 @@
                         <span class="bullet"></span>
                         <div class="timeline-card">
                             <div class="timeline-card-title">
-                                <h2>Technische Universität Braunschweig - TUBS</h2>
-                                <span><i class="fa-regular fa-calendar"></i>Apr/2024 - Mar/2025</span>
+                                <h2 id="edcation-university-2">Technische Universität Braunschweig - TUBS</h2>
+                                <span id="edcation-year-2"><i class="fa-regular fa-calendar"></i> Apr/2024 - Mar/2025</span>
                             </div>
                             <div class="timeline-card-subtitle">
-                                <span>Exchange Program in Computer Science</span>
-                                <span><i class="fa-solid fa-location-dot"></i>Braunschweig, Germany</span>
+                                <span id="edcation-degree-2">Exchange Program in Computer Science</span>
+                                <span id="edcation-place-2"><i class="fa-solid fa-location-dot"></i> Braunschweig, Germany</span>
                             </div>
                         </div>
                     </div>
@@ -241,36 +241,37 @@
     
         <!-- Contact -->
         <section id="contact" class="section-fullscreen">
-            <h1 class="section-title">Contact Me</h1>
+            <h1 class="section-title" id="contact-h1">Contact Me</h1>
             <div class="section-subtitle">
-                <p>Let’s connect! Feel free to reach out:</p>
+                <p id="contact-subtitle">Let’s connect! Feel free to reach out:</p>
                 <div class="contact-info">
-                    <span><i class="fa-solid fa-envelope"></i>mauricio.calil@usp.br</span>
-                    <span><i class="fa-solid fa-phone"></i>+55 (16) 99373-9688</span>
-                    <span><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/maucalil/" target="_blank">LinkedIn</a></span>
+                    <span id="contact-email"><i class="fa-solid fa-envelope"></i> mauricio.calil@usp.br</span>
+                    <span id="contact-phone"><i class="fa-solid fa-phone"></i> +55 (16) 99373-9688</span>
+                    <span id="contact-linkedin"><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/maucalil/" target="_blank">LinkedIn</a></span>
                 </div>
             </div>
             <div class="section-content">
                 <div class="contact-form">
-                    <p>Or drop me a message:</p>
+                    <p id="contact-form-text">Or drop me a message:</p>
                     <form action="">
                         <div class="input-group">
-                            <input type="text" placeholder="Your Name" required>
-                            <input type="email" placeholder="Your Email" required>
+                            <input type="text" id="contact-name" placeholder="Your Name" required>
+                            <input type="email" id="contact-email-input" placeholder="Your Email" required>
                         </div>
-                        <input type="text" placeholder="Subject" required>
-                        <textarea cols="40" rows="10" placeholder="Message"></textarea>
-                        <button type="submit" class="btn-primary">Send</button>
+                        <input type="text" id="contact-subject" placeholder="Subject" required>
+                        <textarea id="contact-message" cols="40" rows="10" placeholder="Message"></textarea>
+                        <button type="submit" id="contact-submit" class="btn-primary">Send</button>
                     </form>
                 </div>
             </div>
-            
         </section>
     </div>
 
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
-    <script src="index.js"></script>
+    <script src="scripts/langSwitcher.js"></script>
+    <script src="scripts/navToggle.js"></script>
+    <script src="scripts/textTypingAnimation.js"></script>
 </body>
 </html>

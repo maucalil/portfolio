@@ -99,10 +99,19 @@ nav {
     margin-right: 32px;
 }
 
-.language-switcher {
+.lang-switcher {
     display: inline-flex;
     gap: 24px;
     font-size: 24px;
+}
+
+.lang-switcher i {
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.lang-switcher i:hover {
+    transform: scale(1.2);
 }
 
 /* Hero Section */
