@@ -13,8 +13,8 @@ This is a personal portfolio website showcasing me, my skills, experience and pr
 ```bash
 portfolio/
 │── assets/              # Images and other assets
+│── styles/              # CSS files
 │── index.html           # Main HTML file
-│── style.css            # Main CSS file
 │── index.js             # JavaScript functionality
 │── README.md            # Project documentation
 ```
