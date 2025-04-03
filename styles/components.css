@@ -166,6 +166,7 @@ nav {
 
 .hero-buttons {
     display: flex;
+    flex-wrap: wrap;
     gap: 32px;
 }
 
@@ -261,11 +262,13 @@ nav {
     align-items: center;
     border-bottom: 1px solid var(--text-primary);
     margin-bottom: 6px;
+    gap: 24px;
 }
 
 .timeline-card .timeline-card-title span {
     font-size: 16px;
     font-weight: 600;
+    min-width: 205px;
 }
 
 .timeline-card .timeline-card-title span i {
@@ -278,6 +281,7 @@ nav {
     align-items: center;
     font-size: 14px;
     font-style: italic;
+    gap: 24px;
 }
 
 .timeline-card .timeline-card-subtitle span i {
@@ -422,11 +426,20 @@ nav {
 }
 
 @media (max-width: 768px) {
+    /* Hero Section */
     .hero-text {
         padding: 40px 0;
     }
-
+    /* Skills Section */
     .skill-category {
         width: 100%; /* 1 per row */
+    }
+
+    /* Timeline */
+    .timeline-card .timeline-card-title,
+    .timeline-card .timeline-card-subtitle {
+        flex-direction: column; /* Stack text vertically */
+        text-align: center;
+        gap: 8px;
     }
 }
