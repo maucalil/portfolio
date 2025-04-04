@@ -413,4 +413,11 @@ nav {
         text-align: center;
         gap: 8px;
     }
+
+    /* Contact */
+    .contact-card {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+    }
 }
